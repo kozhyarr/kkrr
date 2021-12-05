@@ -1,0 +1,41 @@
+<head>
+    <script type="text/javascript">
+    function information (){
+        var name = prompt ("name");
+        var subject = prompt ("subject");
+        var degree = prompt ("degree");
+document.write ("<br> your name  "  +name);
+document.write ("<br> your subject " +subject);
+document.write ("<br> your degree  " +degree);
+if(degree>=50)
+{
+    document.write("you are pass");
+}
+else{
+    document.write("fail");
+}
+document.write('<button onclick="confirmation()">Leave This Page</button>'
+    
+)
+    }
+
+
+
+    function confirmation() {
+    var answer = confirm("Leave this page?")
+    if (answer) {  alert("Bye bye!")
+    window.location = "http://www.google.com/"; }
+    else
+    { alert("Thanks for sticking around!") }
+    }
+    </script> </head>
+    <body>
+    <form> <input type="button" onclick="information()" value=" Add date">
+    </form>
+    </body>
+    
+
+
+
+
+</html>
